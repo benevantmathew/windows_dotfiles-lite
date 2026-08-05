@@ -18,6 +18,7 @@
     ph = push
     pl = pull
     lg = log --oneline --graph --decorate --all
+    lg1w = log --since="1 week ago" --stat
     ba = branch -a
     bd = branch -d
     puo = push --set-upstream origin
@@ -28,7 +29,14 @@
     c = clean -fxd -e **/.vscode/* -e setup
     s = switch
     m = merge
+    ms = merge --squash
+    msu = merge --squash --allow-unrelated-histories
     cb = checkout -b
     rpo = remote prune origin
     cp = cherry-pick
     dh =  diff HEAD~1 HEAD
+    uiau = update-index --assume-unchanged
+    uinau = update-index --no-assume-unchanged
+    tagr = tag --sort=-version:refname
+    tagd = tag --sort=-creatordate
+    f = fetch

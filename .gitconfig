@@ -40,3 +40,8 @@
     tagr = tag --sort=-version:refname
     tagd = tag --sort=-creatordate
     f = fetch
+    suir = submodule update --init --recursive
+    ssr = submodule status --recursive
+    lst = ls-tree
+    lsf = ls-files
+
